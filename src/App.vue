@@ -2,16 +2,20 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <hr />
+    <WordCloud />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import HelloWorld from "./components/HelloWorld.vue";
+import WordCloud from "./components/WordCloud.vue";
 
 @Component({
   components: {
     HelloWorld,
+    WordCloud,
   },
 })
 export default class App extends Vue {}
